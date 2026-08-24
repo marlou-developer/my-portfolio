@@ -1,6 +1,6 @@
 // src/app/_components/Topbar.jsx
 'use client';
-
+import navigations from '@/app/_lib/path'
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Magnet from '@/app/_components/Magnet';
@@ -11,7 +11,7 @@ export default function Topbar() {
     const [scrolled, setScrolled] = useState(false);
 
     // Complete navigation list matching all portfolio sections
-    const links = ['About', 'Experience', 'Projects', 'Contact'];
+    const links = navigations.map(res=>res.label);
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 20);

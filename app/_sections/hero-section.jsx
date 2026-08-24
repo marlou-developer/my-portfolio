@@ -15,6 +15,7 @@ import {
     FaUser,
     FaChartBar
 } from 'react-icons/fa';
+import socials from '@/app/_lib/socials'
 
 export default function HeroSection() {
     return (
@@ -101,9 +102,13 @@ export default function HeroSection() {
                     {/* Social Icons Arc (Bottom) */}
                     <div className="absolute -bottom-0 left-1/2 -translate-x-1/2 flex items-center gap-4 z-20">
                         {/* Array updated to use React Icons */}
-                        {[FaInstagram, FaDribbble, FaLinkedin, FaGithub, FaFacebook].map((Icon, index) => (
+                        {socials.map(({ Icon, label, link }, index) => (
                             <Magnet key={index} padding={10}>
-                                <a href="#" className={`flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 border border-gray-700 text-white hover:bg-gradient-to-tr hover:from-pink-500 hover:to-purple-500 transition-all duration-300 shadow-xl ${index === 2 ? 'w-14 h-14 bg-gradient-to-tr from-pink-500 to-purple-500' : ''}`}>
+                                <a
+                                    href={link || "#"}
+                                    aria-label={label}
+                                    className={`flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 border border-gray-700 text-white hover:bg-gradient-to-tr hover:from-pink-500 hover:to-purple-500 transition-all duration-300 shadow-xl  `}
+                                >
                                     <Icon size={index === 2 ? 24 : 20} />
                                 </a>
                             </Magnet>
