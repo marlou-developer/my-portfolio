@@ -69,7 +69,9 @@ export default function HeroSection() {
                             {/* Updated Icon */}
                             <FaArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                         </a>
-                        <a href="/cv.pdf" className="px-8 py-4 bg-transparent border border-gray-600 text-gray-300 font-bold rounded-xl hover:bg-white/5 hover:border-white transition-all">
+                        <a
+                            target='_blank'
+                            href="/pdf/Marlou . Pepito CV.pdf" className="px-8 py-4 bg-transparent border border-gray-600 text-gray-300 font-bold rounded-xl hover:bg-white/5 hover:border-white transition-all">
                             Download CV
                         </a>
                     </div>
