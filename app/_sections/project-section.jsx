@@ -14,7 +14,7 @@ export default function ProjectSection() {
         {
             title: "Curtis International LTD - CRM",
             category: "Full-Stack",
-            description: "A modern online store built with Next.js, Stripe, and Tailwind. Features real-time cart updates, dynamic filtering, and a sleek dark theme UI.",
+            description: "A customer relationship management system tailored for tracking support cases, managing client interactions, and streamlining internal operations.",
             technologies: ["Next.js", "Tailwind CSS", "TypeScript", 'Laravel'],
             image: "https://magnavox.com/wp-content/uploads/2025/05/Picture2-1024x839.png",
             github: "https://github.com/empireone-dev/curtis-crm",
@@ -23,7 +23,7 @@ export default function ProjectSection() {
         {
             title: "EmpireOneCX Careers",
             category: "Full-Stack",
-            description: "Interactive data visualization dashboard with customizable widgets, real-time metrics tracking, and exportable analytics reports.",
+            description: "A dedicated job portal and career platform featuring job listings, application workflows, and automated candidate tracking.",
             technologies: ["React", "Appscript", "Framer Motion", "Tailwind", 'Laravel'],
             image: "https://careers.empireonecx.com/images/E1CXlogo2.png",
             github: "https://github.com/EmpireOne-IT-Devs/empireone-web",
@@ -32,7 +32,7 @@ export default function ProjectSection() {
         {
             title: "EmpireOne Health",
             category: "Full-Stack",
-            description: "An animated, highly interactive portfolio website built using ReactBits, glassmorphism design principles, and custom WebGL backgrounds.",
+            description: "A comprehensive healthcare web platform built to manage patient services, medical consultations, and health information securely.",
             technologies: ["React", "Next.js", "Framer Motion", "Tailwind", 'Laravel'],
             image: "https://www.william-russell.com/wp-content/uploads/Healthcare-professionalshaking-hands-William-Russell.jpg",
             github: "https://github.com/empireone-dev/empireone-health",
@@ -41,7 +41,7 @@ export default function ProjectSection() {
         {
             title: "Egies Beauty Boutique",
             category: "Full-Stack",
-            description: "Interactive data visualization dashboard with customizable widgets, real-time metrics tracking, and exportable analytics reports.",
+            description: "A point-of-sale and store management web app featuring real-time inventory updates, transaction logging, and live WebSocket notifications.",
             technologies: ["React", "Appscript", "Framer Motion", "Tailwind", 'Laravel', 'Pusher.js'],
             image: "https://egies-pos.store/images/logo.png",
             github: "https://github.com/marlou-developer/egies-pos",
@@ -50,7 +50,7 @@ export default function ProjectSection() {
         {
             title: "Curtis International LTD - Web Form",
             category: "Full-Stack",
-            description: "Interactive data visualization dashboard with customizable widgets, real-time metrics tracking, and exportable analytics reports.",
+            description: "An online claim resolution portal that simplifies customer submissions, warranty validations, and ticket processing.",
             technologies: ["React", "Appscript", "Framer Motion", "Tailwind", 'Laravel'],
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRANu7RHYNshLhabFthIpuqNm1ybHf9qzQZWwLQUhIjf500Ves-2qtW09E&s=10",
             github: "https://github.com/empireone-dev/curtis-v2",
@@ -59,13 +59,12 @@ export default function ProjectSection() {
         {
             title: "EmpireOneCX Unified Ticketing System",
             category: "Full-Stack",
-            description: "Interactive data visualization dashboard with customizable widgets, real-time metrics tracking, and exportable analytics reports.",
+            description: "An enterprise incident and inventory management platform designed for seamless ticket distribution, SLA tracking, and resolution monitoring.",
             technologies: ["React", "Appscript", "Framer Motion", "Tailwind", 'Laravel'],
             image: "https://careers.empireonecx.com/images/E1CXlogo2.png",
             github: "https://github.com/empireone-dev/empireone-system",
             live: "https://eo-unified-ims.com"
         },
-
     ];
 
     const filteredProjects = activeFilter === 'All'
@@ -93,28 +92,6 @@ export default function ProjectSection() {
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
                         Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">Projects</span>
                     </h2>
-
-                    {/* Category Filter Tabs */}
-                    {/* <div className="flex flex-wrap justify-center gap-3 bg-white/5 border border-white/10 p-2 rounded-2xl backdrop-blur-md">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setActiveFilter(category)}
-                className={`relative px-5 py-2 text-sm font-semibold rounded-xl transition-all duration-300 ${
-                  activeFilter === category ? 'text-white' : 'text-gray-400 hover:text-white'
-                }`}
-              >
-                {activeFilter === category && (
-                  <motion.div
-                    layoutId="activeFilterBg"
-                    className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 rounded-xl shadow-[0_0_15px_rgba(236,72,153,0.4)]"
-                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                  />
-                )}
-                <span className="relative z-10">{category}</span>
-              </button>
-            ))}
-          </div> */}
                 </motion.div>
 
                 {/* Projects Grid */}
