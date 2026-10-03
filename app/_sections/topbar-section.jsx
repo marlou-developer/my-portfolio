@@ -64,7 +64,7 @@ export default function Topbar() {
                         {/* Action Call to Action Button */}
                         <Magnet padding={10}>
                             <a
-                                href="#contact"
+                                href="#contacts"
                                 className="px-5 py-2 text-sm font-semibold text-black bg-white rounded-full hover:bg-gray-200 transition-colors shadow-[0_0_15px_rgba(255,255,255,0.2)]"
                             >
                                 Let's Talk
@@ -120,7 +120,7 @@ export default function Topbar() {
                                 transition={{ delay: 0.1 + (links.length * 0.1) }}
                             >
                                 <a
-                                    href="#contact"
+                                    href="#contacts"
                                     onClick={() => setIsOpen(false)}
                                     className="px-8 py-4 mt-4 inline-block text-xl font-semibold text-black bg-white rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)]"
                                 >

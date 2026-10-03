@@ -19,7 +19,7 @@ import socials from '@/app/_lib/socials'
 
 export default function HeroSection() {
     return (
-        <section id="hero" className="relative min-h-[90vh] flex items-center pt-30 overflow-hidden">
+        <section id="home" className="relative min-h-[90vh] flex items-center pt-30 overflow-hidden">
             <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 pointer-events-auto">
 
                 {/* ======================= */}

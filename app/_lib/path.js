@@ -1,4 +1,8 @@
 const navigations = [
+     {
+    label: "Home",
+    path: "/#home",
+  },
   {
     label: "About",
     path: "/#about",
@@ -10,10 +14,6 @@ const navigations = [
   {
     label: "Projects",
     path: "/#projects",
-  },
-  {
-    label: "Contacts",
-    path: "/#contacts",
   },
 ];
 
